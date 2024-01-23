@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  font-family: sans-serif;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+table {
+  border: 1px solid red;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background-color: #443c68;
+  padding: 5px;
+}
+
+thead th {
+  color: white;
+  padding: 10px;
+}
+
+tbody {
+  background-color: beige;
+}
+
+tbody td {
+  border: 1px solid red;
+  padding: 0.5em;
+}
+
+.search-bar {
+  /* border: 1px solid red; */
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.search-box {
+  padding: 10px;
+  width: 50%;
+}
+
+.pagination {
+  /* border: 1px solid red; */
+  padding: 15px;
+}
+
+.pagination > span {
+  /* border: 1px solid red; */
+  padding: 15px;
+  cursor: pointer;
+}
+
+.page-selected {
+  background-color: rgb(220, 220, 220);
+}
+
+@media screen and (min-width: 400px) {
+  .search-bar {
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: 100px auto;
+    padding: 10px;
+  }
+
+  .search-box {
+    width: 60%;
+  }
+
+  .pagination {
+    /* border: 1px solid red; */
+    margin: 50px auto;
+  }
+
+  .pagination > span {
+    /* border: 1px solid red; */
+    padding: 10px;
+    cursor: pointer;
+  }
 }
